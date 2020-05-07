@@ -1,6 +1,8 @@
 import React from 'react'
 import Axios from "axios";
 
+import UserCard from './components/UserCard';
+
 import './App.css';
 export default class App extends React.Component {
 constructor(){
@@ -32,6 +34,7 @@ fetchData = () => {
         <header className="App-header">
           <h1 className="App-logo">Github User Card with React</h1>
         </header>
+        <UserCard />
       </div>
     );
   }
